@@ -21,7 +21,7 @@ public class Show extends BaseModel{
 }
 
 /*
-        show        Auditorium
+        show        Auditorium         ---------------->>>>>>>>>>>>>>>>>>>>>>>>>>>
            1            1
            M            1
 
