@@ -1,8 +1,14 @@
 package org.example.ticker_booking_system.Model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.*;
+@Getter
+@Setter
+@Entity
 public class Theatre extends BaseModel
 {
     private String name;
