@@ -38,8 +38,13 @@ public class TicketService {
         }
 
         //write the logic for payment flow
-
+        startPayment(showSeatIds);
         return new Ticket();
+    }
+
+    public boolean startPayment(List<Integer> showSeatIds)
+    {
+        return true;
     }
 
     public String greet(){

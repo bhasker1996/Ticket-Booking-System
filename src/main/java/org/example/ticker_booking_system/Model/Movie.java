@@ -20,4 +20,11 @@ public class Movie extends BaseModel{
     @Enumerated(value = EnumType.STRING)
     private List<MovieFeature> movieFeatures;
 
+//    public Movie() {
+//    }
+
+    public Movie(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
 }

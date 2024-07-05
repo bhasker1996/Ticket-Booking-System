@@ -12,13 +12,21 @@ import org.example.ticker_booking_system.Constant.ShowSeatStatus;
 @Setter
 @Entity
 public class ShowSeat extends BaseModel {
-
+    private int price;
     @ManyToOne
     private Show show;
-    private int price;
     @ManyToOne
     private Seat seat;
     @Enumerated(value = EnumType.STRING)
     private ShowSeatStatus showSeatStatus;
 
+    public ShowSeat() {
+    }
+
+    public ShowSeat(int price, Show show, Seat seat, ShowSeatStatus showSeatStatus) {
+        this.price = price;
+        this.show = show;
+        this.seat = seat;
+        this.showSeatStatus = showSeatStatus;
+    }
 }
