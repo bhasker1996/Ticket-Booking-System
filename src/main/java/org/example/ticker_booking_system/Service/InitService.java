@@ -66,7 +66,7 @@ public class InitService {
 
         for(int i=1; i <=5; i++)
         {
-            Seat s = new Seat(i, i, i+" "+i, SeatType.GOLD, SeatStatus.AVAILABLE);
+            Seat s = new Seat(i, i, SeatType.GOLD,i+" "+i,  SeatStatus.AVAILABLE);
             seatRepository.save(s);
         }
 

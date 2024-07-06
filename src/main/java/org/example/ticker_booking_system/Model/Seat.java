@@ -31,4 +31,7 @@ public class Seat extends BaseModel{
         this.seatNumber = seatNumber;
         this.status = status;
     }
+
+
+
 }

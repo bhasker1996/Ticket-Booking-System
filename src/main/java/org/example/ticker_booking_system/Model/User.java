@@ -1,5 +1,6 @@
 package org.example.ticker_booking_system.Model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
@@ -13,7 +14,9 @@ import java.util.List;
 public class User extends BaseModel{
 
     private String name;
+    @Column(unique = true)
     private String email;
+    private String password;
     @OneToMany
     private List<Ticket> tickets;
 }
